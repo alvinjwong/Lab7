@@ -3,13 +3,13 @@
 
 bool isPathToFreedom(MazeCell* start, const std::string& moves) {
    std::vector<Item> collectedItem; // not right idk syntax rn but im putting out ideas.
-
-   if (whatsHere == "SPELLBOOK") {
-    collectedItem.push_back(SPELLBOOK);
-    } else if (whatsHere == "POTION") {
-        collectedItem.push_back(POTION);
-    } else if (whatsHere == "WAND") {
-        collectedItem.push_back(WAND);
+   MazeCell* currentLocation = start;
+   if (currentLocation->whatsHere == Item::SPELLBOOK) {
+    collectedItem.push_back(Item::SPELLBOOK);
+    } else if (currentLocation->whatsHere == Item::POTION) {
+        collectedItem.push_back(Item::POTION);
+    } else if (currentLocation->whatsHere == Item::WAND) {
+        collectedItem.push_back(Item::WAND);
         } else {
             //continue through pathing
         }
@@ -19,7 +19,7 @@ bool isPathToFreedom(MazeCell* start, const std::string& moves) {
     //if moves->etc == nullptr, then its a false path
 
 
-    MazeCell* currentLocation = start;
+    
 
     for (char path : moves) {
         if (path == 'N') {
