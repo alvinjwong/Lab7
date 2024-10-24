@@ -6,19 +6,20 @@ bool isPathToFreedom(MazeCell* start, const std::string& moves) {
    MazeCell* currentLocation = start;
    if (currentLocation->whatsHere == Item::SPELLBOOK) {
     collectedItem.push_back(Item::SPELLBOOK);
-    } else if (currentLocation->whatsHere == Item::POTION) {
+    }
+    if (currentLocation->whatsHere == Item::POTION) {
         collectedItem.push_back(Item::POTION);
-    } else if (currentLocation->whatsHere == Item::WAND) {
+    }
+    if (currentLocation->whatsHere == Item::WAND) {
         collectedItem.push_back(Item::WAND);
-        } else {
-            //continue through pathing
-        }
+    }
+            //check to see if we start with any items
     
 
     // for (something : moves) iterate and check what path
     //if moves->etc == nullptr, then its a false path
 
-
+//maybe have a while loop that sees if item::nothing idk
     
 
     for (char path : moves) {
@@ -37,4 +38,18 @@ bool isPathToFreedom(MazeCell* start, const std::string& moves) {
         return false; // i think this means that there is nothing there/no path there
     }
    
+   if (currentLocation->whatsHere == Item::SPELLBOOK) {
+    collectedItem.push_back(Item::SPELLBOOK);
+    }
+    if (currentLocation->whatsHere == Item::POTION) {
+        collectedItem.push_back(Item::POTION);
+    }
+    if (currentLocation->whatsHere == Item::WAND) {
+        collectedItem.push_back(Item::WAND);
+    }
+
+    return collectedItem.size() == 3;
+
+
+    //check again from each cell for items
 }
