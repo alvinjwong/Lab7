@@ -13,7 +13,7 @@ const std::string kYourName = "AlvinAnastasia";
 
 /* Change these constants to contain the paths out of your mazes. */
 const std::string kPathOutOfNormalMaze = "ESSSWNWWSNENNWS";
-const std::string kPathOutOfTwistyMaze = "";
+const std::string kPathOutOfTwistyMaze = "SSWWENNSW";
 
 int main() {
     /* Generate the maze.

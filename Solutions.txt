@@ -1,4 +1,4 @@
 Using String AlvinAnastasia as the key
 
 Path out of labyrinth:        ESSSWNWWSNENNWS
-Path out of twisty labyrinth: ESWEESWENE
+Path out of twisty labyrinth: SSWWENNSW
