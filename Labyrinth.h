@@ -29,3 +29,6 @@ struct MazeCell {
  * and you can't move in directions that don't exist in the maze.
  */
 bool isPathToFreedom(MazeCell* start, const std::string& moves);
+
+//helper method for debug code
+std::string itemToString(Item i);

@@ -1,0 +1,12 @@
+{
+    "tasks": [
+        {
+            "type": "shell",
+            "label": "run the makefile",
+            "command":"/workspaces/Lab7/g++ -o ./Main Main.cpp Labyrinth.cpp MazeGenerator.cpp",
+            "args": ["main.exe"],
+            "problemMatcher": [],
+        }
+    ],
+    "version": "2.0.0"
+}
