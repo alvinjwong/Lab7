@@ -2,6 +2,7 @@
 #include <vector>
 
 bool isPathToFreedom(MazeCell* start, const std::string& moves) {
+    //looks like it should work. About to start the debug test so I'll update you
    std::vector<Item> collectedItem; // not right idk syntax rn but im putting out ideas.
    MazeCell* currentLocation = start;
    if (currentLocation->whatsHere == Item::SPELLBOOK) {
